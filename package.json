@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "coverage": "jest -- --coverage",
+    "coverage": "jest --coverage",
     "report": "jest --coverage && open report/test-report.html",
     "report:win": "jest --coverage && start report/test-report.html"
   },
