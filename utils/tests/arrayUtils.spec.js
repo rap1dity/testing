@@ -1,4 +1,4 @@
-const { findMax, findMin, removeDuplicates } = require('../arrayUtils');
+import { findMax, findMin, removeDuplicates } from '../arrayUtils';
 
 describe('ArrayUtils', () => {
   const arr = [1,5,3,3];
@@ -11,7 +11,7 @@ describe('ArrayUtils', () => {
     it('should throw error if input is not array', () => {
       expect(() => findMax(123)).toThrow('Input must be an array');
     });
-  })
+  });
 
   describe('findMin', () => {
     it('should return lowest number', () => {
@@ -21,7 +21,7 @@ describe('ArrayUtils', () => {
     it('should throw error if input is not array', () => {
       expect(() => findMin(123)).toThrow('Input must be an array');
     });
-  })
+  });
 
   describe('removeDuplicates', () => {
     it('should return unique set', () => {
@@ -31,5 +31,5 @@ describe('ArrayUtils', () => {
     it('should throw error if input is not array', () => {
       expect(() => removeDuplicates(123)).toThrow('Input must be an array');
     });
-  })
-})
+  });
+});

@@ -1,4 +1,4 @@
-const { filterUsersByAge, sortUsersByName, findUserById, isEmailTaken } = require('../usersListUtils');
+import { filterUsersByAge, sortUsersByName, findUserById, isEmailTaken } from '../usersListUtils';
 
 describe('User Utils', () => {
   const users = [

@@ -1,4 +1,4 @@
-const { checkStudentKnowledge } = require('../studentKnowledgeCheckerUtil');
+import { checkStudentKnowledge } from '../studentKnowledgeCheckerUtil';
 
 describe('studentKnowledgeCheckerUtil', () => {
   const correct = { q1: 'a', q2: 'b', q3: 'c' };

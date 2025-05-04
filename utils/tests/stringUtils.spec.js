@@ -1,4 +1,4 @@
-const { capitalize, reverseString, isPalindrome } = require('../stringUtils');
+import { capitalize, reverseString, isPalindrome } from '../stringUtils';
 
 describe('stringUtils', () => {
   describe('capitalize', () => {
@@ -34,4 +34,4 @@ describe('stringUtils', () => {
       expect(() => isPalindrome(true)).toThrow('Input must be a string');
     });
   });
-})
+});

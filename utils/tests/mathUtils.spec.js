@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide } = require('../mathUtils');
+import { add, subtract, multiply, divide } from '../mathUtils';
 
 describe('mathUtils', () => {
   const a = 10, b = 5;
@@ -23,5 +23,5 @@ describe('mathUtils', () => {
     it('should handle division by zero', () => {
       expect(() => divide(a, 0)).toThrow('Cannot divide by zero');
     });
-  })
-})
+  });
+});
