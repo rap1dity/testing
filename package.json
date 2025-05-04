@@ -6,7 +6,8 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "report": "jest --coverage && open report/test-report.html",
-    "report:win": "jest --coverage && start report/test-report.html"
+    "report:win": "jest --coverage && start report/test-report.html",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,16 @@
   "homepage": "https://github.com/rap1dity/testing#readme",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
     "@types/jest": "^29.5.14",
+    "eslint": "^9.26.0",
+    "husky": "^8.0.3",
     "jest": "^29.7.0",
-    "jest-html-reporter": "^4.1.0"
+    "jest-html-reporter": "^4.1.0",
+    "lint-staged": "^15.5.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
   }
 }
