@@ -5,7 +5,7 @@
  * @param {number} maxAge - Maximum age.
  * @returns {Array} - Filtered list of users.
  */
-function filterUsersByAge(users, minAge, maxAge) {
+export function filterUsersByAge(users, minAge, maxAge) {
   if (!Array.isArray(users)) {
     throw new Error('Users must be an array');
   }
@@ -17,7 +17,7 @@ function filterUsersByAge(users, minAge, maxAge) {
  * @param {Array} users - List of users.
  * @returns {Array} - Sorted list of users.
  */
-function sortUsersByName(users) {
+export function sortUsersByName(users) {
   if (!Array.isArray(users)) {
     throw new Error('Users must be an array');
   }
@@ -30,7 +30,7 @@ function sortUsersByName(users) {
  * @param {number} id - User ID.
  * @returns {Object|null} - Found user, or null if user not found.
  */
-function findUserById(users, id) {
+export function findUserById(users, id) {
   if (!Array.isArray(users)) {
     throw new Error('Users must be an array');
   }
@@ -43,16 +43,9 @@ function findUserById(users, id) {
  * @param {string} email - Email to check.
  * @returns {boolean} - True if a user with this email exists, otherwise false.
  */
-function isEmailTaken(users, email) {
+export function isEmailTaken(users, email) {
   if (!Array.isArray(users)) {
     throw new Error('Users must be an array');
   }
   return users.some(user => user.email === email);
-}
-
-module.exports = {
-  filterUsersByAge,
-  sortUsersByName,
-  findUserById,
-  isEmailTaken
 }
